@@ -1,0 +1,85 @@
+<!--Brandon Alvrez De La Cruz-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 3 &amp; CSS1 </title>
+        <link rel="stylesheet" href="CSS1.css" type="text/css">
+    </head>
+    <style>
+        p {background-color: black;
+           color: white;}
+        
+        .groupstyles {background-color: yellow;
+                      color: purple;}
+        .spanclass {background-color: white;
+                    color: red;}
+        
+        #idstyle {background-color: blue;}
+
+        footer {color: blue;}
+
+        footer p {color: blue;}
+    </style>
+
+    <body>
+         <div>
+            <h2>Sample Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Name </th>
+                        <th> Age </th>
+                        <th> Job </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td> Alice </td>
+                        <td> 24 </td>
+                        <td> Designer </td>
+                    </tr>
+
+                    <tr>
+                        <td> Bob </td>
+                        <td> 26 </td>
+                        <td> Developer </td>
+                    </tr>
+
+                    <tr>
+                        <td> Charlie </td>
+                        <td> 30 </td>
+                        <td> Artist </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h1>Cascading Style Sheets</h1>
+        <h2>CSS Methods</h2>
+        <ol>
+            <li>Browser Default</li>
+            <li>External Styles</li>
+            <li>Embedded Styles</li>
+            <li>Inline Styles</li>
+        </ol>
+
+        <p class="groupstyles"> External -- coded as separate file</p>
+        <p> Embedded -- defined in the head section of the website</p>
+        <p> Imported -- brought in from somewhere else</p>
+        <p style="background-color: orange;"> Inline -- written inside the HTML tag as an attribute</p>
+        
+        <h2 class="groupstyles"> Classes</h2>
+        <p> Classes allow you <span class="spanclass">to create a group</span> with same properties.</p>
+        <h2 id="idstyle">IDs</h2>
+        <p>IDs allow you to classify one element on a page</p>
+
+        <footer>
+            <p>name</p>
+            <p>address</p>
+            <p>phone number</p>
+        </footer>
+    </body>
+   
+</html>

@@ -1,0 +1,21 @@
+/* Brandon Alvarez */
+
+/* selector {declaration: value;} */
+
+body {background-color: red;
+      background-color: blue;
+      color: white;
+      background-color: rgb(50, 200, 50);
+      background-color: hsl (200, 70%, 70%);
+      background-color: hex (#FF22FF);
+      background-color: #F2F;
+    }
+
+h1, h2, h3 {color: green;
+            background-color: white;}
+
+p {color: blue;}
+
+ol {background-color: white;}
+
+ol li {color: green;}
