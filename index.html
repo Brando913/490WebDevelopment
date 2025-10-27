@@ -1,82 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Brandon Alvarez</title>
-        <link rel="stylesheet" href="Midterm/styles.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Brandon Alvarez — Portfolio</title>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Midterm/styles.css" />
     </head>
+
     <body>
-        <header>
-            <h1>Projects</h1>
+        <header class="site-header">
+            <div class="container header-inner">
+                <div>
+                    <h1 class="site-title">Brandon Alvarez</h1>
+                    <p class="subtitle" id="greeting">Computer Science Student</p>
+                </div>
+
+                <div class="header-actions">
+                    <nav class="main-nav" aria-label="Main navigation">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <button id="themeToggle" class="btn small">Dark</button>
+                </div>
+            </div>
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
-
         <main>
-            <section id="projects">
-                <div class="Grid">
+            <section class="hero container">
+                <div>
+                    <h2>Portfolio</h2>
+                    <p class="lead">A selection of assignments and small projects showcasing HTML, CSS, and JavaScript skills. Click a card to view more.</p>
+                </div>
+            </section>
 
-                    <article class="projectCard">
+            <section id="projects" class="container">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="Grid" id="projectsGrid">
+                    <article class="projectCard" data-title="Parks & Rec" data-desc="A simple webpage using HTML to show parks and activities." data-link="Week2Assignment/home.html">
                         <h3><a href="Week2Assignment/home.html">Parks & Rec</a></h3>
                         <p>A simple webpage using HTML to show parks and activities.</p>
+                        <button class="btn viewBtn">View</button>
                     </article>
 
-                    <article class="projectCard">
+                    <article class="projectCard" data-title="Cozy Cafe" data-desc="Webpage showing a cafe and menu. Uses HTML & CSS." data-link="Week3Assignment/CozyCafeHome.html">
                         <h3><a href="Week3Assignment/CozyCafeHome.html">Cozy Cafe</a></h3>
-                        <p>Webpage showing a cafe shop to learn more about, also able to see menu. Uses HTML & CSS.</p>
+                        <p>Webpage showing a cafe shop and menu. Uses HTML & CSS.</p>
+                        <button class="btn viewBtn">View</button>
                     </article>
 
-                    <article class="projectCard">
+                    <article class="projectCard" data-title="Travel Guide" data-desc="Travel guide to Paris, demonstrates layout and image use." data-link="Week4Assignment/TravelGuideHome.html">
                         <h3><a href="Week4Assignment/TravelGuideHome.html">Travel Guide</a></h3>
-                        <p>Travel guide to Paris, shows the implimentation for CSS and images.</p>
+                        <p>Travel guide to Paris — CSS and images demo.</p>
+                        <button class="btn viewBtn">View</button>
                     </article>
 
-                    <article class="projectCard">
-                        <h3><a href="Week5Assignment/TechHome.html">Travel Guide</a></h3>
-                        <p>Website for a Tech product showcase. Shows the use of CSS of div.</p>
-                    </article> 
+                    <article class="projectCard" data-title="Tech Showcase" data-desc="A product showcase layout using responsive CSS." data-link="Week5Assignment/TechHome.html">
+                        <h3><a href="Week5Assignment/TechHome.html">Tech Showcase</a></h3>
+                        <p>Website for tech product showcase. Demonstrates layout and imagery.</p>
+                        <button class="btn viewBtn">View</button>
+                    </article>
 
-                    <article class="projectCard">
+                    <article class="projectCard" data-title="Grocery List" data-desc="Interactive grocery list using JavaScript for adding and crossing off items." data-link="Week6Assignment/home.html">
                         <h3><a href="Week6Assignment/home.html">Grocery List</a></h3>
-                        <p>Interactive grocery list to input needed items and able to cross items off the list. Uses HTML, CSS, and Java Script. NOT WORKING YET</p>
-                    </article>
-                    
-                    <article class="projectCard">
-                        <h3><a href="Week7Assignment/home.html">Week 7 Assignment</a></h3>
-                        <p>In Progress</p>
+                        <p>Interactive grocery list app. Uses HTML, CSS, and JavaScript.</p>
+                        <button class="btn viewBtn">View</button>
                     </article>
 
-                    <article id="contact" class="contactCard">
-                        <h2>Contact</h2>
-                        <ul>
-                            <li>
-                                <!-- envelope icon -->
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path d="M3 7.5L12 13L21 7.5" stroke="#0b1320" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <rect x="3" y="4" width="18" height="14" rx="2" stroke="#0b1320" stroke-width="1.5"/>
-                                </svg>
-                                <span>Email: <a href="mailto:brandonalvarex15@gmail.com">brandonalvarex15@gmail.com</a></span>
-                            </li>
-                            <li>
-                                <!-- github / link icon -->
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path d="M10 14L21 3" stroke="#0b1320" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M21 3H14V10" stroke="#0b1320" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>GitHub: <a href="https://github.com/Brando913" target="_blank" rel="noopener">github.com/Brando913</a></span>
-                            </li>
-                        </ul>
-                    </article>   
+                    <article class="projectCard" data-title="Week 7 Assignment" data-desc="In progress" data-link="#">
+                        <h3>Week 7 Assignment</h3>
+                        <p>In progress.</p>
+                        <button class="btn viewBtn">View</button>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-grid">
+                    <div class="contactCard">
+                        <h3>Get in touch</h3>
+                        <p>Email: <a href="mailto:brandonalvarex15@gmail.com">brandonalvarex15@gmail.com</a></p>
+                        <p>GitHub: <a href="https://github.com/Brando913" target="_blank" rel="noopener">github.com/Brando913</a></p>
+                    </div>
+
+                    <div class="contactCard">
+                        <h3>Send a message</h3>
+                        <form id="contactForm">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" required />
+
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" required />
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+
+                            <button class="btn" type="submit">Send</button>
+                            <p id="formStatus" class="muted"></p>
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>
 
         <footer>
-            <p>&copy;2025 Brandon Alvarez. All rights reserved.</p>
+            <div class="container footer-inner">
+                <p>&copy; <span id="year">2025</span> Brandon Alvarez. All rights reserved.</p>
+                <button id="toTop" title="Scroll to top">↑</button>
+            </div>
         </footer>
+
+        <!-- Modal (hidden by default) -->
+        <div id="modal" class="modal" aria-hidden="true">
+            <div class="modal-content" role="dialog" aria-modal="true">
+                <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+                <a id="modalLink" class="btn" target="_blank" rel="noopener">Open Project</a>
+            </div>
+        </div>
+
+        <script src="Midterm/script.js" defer></script>
     </body>
 </html>
