@@ -155,19 +155,64 @@ body{
 
 .contactCard{
     background:var(--card);
-    color:#0b1320;padding:16px;border-radius:var(--radius)}
+    color:#0b1320;
+    padding:16px;
+    border-radius:var(--radius)
+}
+
 .contactCard h3{margin-bottom:8px}
-.contactCard a{color:var(--accent);text-decoration:none}
 
-form{display:flex;flex-direction:column;gap:8px}
-input,textarea{padding:8px;border-radius:8px;border:1px solid #cfcfcf}
-.muted{color:var(--muted);font-size:0.9rem}
+.contactCard a{
+    color:var(--accent);
+    text-decoration:none
+}
 
-footer{padding:18px 0;color:var(--muted)}
-.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+form{
+    display:flex;
+    flex-direction:column;
+    gap:8px
+}
+
+input,textarea{
+    padding:8px;
+    border-radius:8px;
+    border:1px solid #cfcfcf
+}
+
+.muted{
+    color:var(--muted);
+    font-size:0.9rem
+}
+
+footer{
+    padding:18px 0;
+    color:var(--muted)
+}
+
+.footer-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px
+}
 
 /* Scroll to top button */
-#toTop{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:10px;border:none;background:var(--accent);color:white;font-size:18px;display:none;align-items:center;justify-content:center;cursor:pointer}
+#toTop{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    width:44px;
+    height:44px;
+    border-radius:10px;
+    border:none;
+    background:var(--accent);
+    color:white;
+    font-size:18px;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer
+}
 
 /* Modal styles */
 .modal{
@@ -203,17 +248,41 @@ footer{padding:18px 0;color:var(--muted)}
 }
 
 /* Dark mode support (toggle adds .dark on body) */
-body.dark{background:linear-gradient(180deg,#071022,#020617);color:#cfe8ff}
-body.dark .projectCard a{color: #cfe8ff}
-body.dark .projectCard{background:#0b2533;color:#cfe8ff}
-body.dark .contactCard{background:#092631;color:#cfe8ff}
-body.dark .main-nav a{color:var(--card)}
+body.dark{
+    background:linear-gradient(180deg,#071022,#020617);
+    color:#cfe8ff
+}
+
+body.dark .projectCard a{
+    color: #cfe8ff;
+}
+
+body.dark .projectCard{
+    background:#0b2533;
+    color:#cfe8ff
+}
+
+body.dark .contactCard{
+    background:#092631;
+    color:#cfe8ff
+}
+
+body.dark .main-nav a{
+    color:var(--card);
+}
 
 /* Responsive tweaks */
 @media (max-width:800px){
   .contact-grid{grid-template-columns:1fr}
-  .header-inner{flex-direction:column;align-items:flex-start}
-  .footer-inner{flex-direction:column;align-items:flex-start}
+  .header-inner{
+    flex-direction:column;
+    align-items:flex-start
+    }
+
+  .footer-inner{
+    flex-direction:column;
+    align-items:flex-start
+    }
 }
 
 @media (max-width:480px){
@@ -221,4 +290,3 @@ body.dark .main-nav a{color:var(--card)}
   .lead{font-size:0.95rem}
   .Grid{gap:14px}
 }
-
